@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Cactus - Tu Tienda de Cactus y Suculentas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estyle.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="imagenes/logo_mundo_cactus.jpg" alt="Logo Mundo Cactus" class="logo-img">
+                <div class="logo-text">Mundo<span>Cactus</span></div>
+            </a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Descubre la Belleza Natural de los <span>Cactus y Suculentas</span></h1>
+            <p>En Mundo Cactus cultivamos las plantas más exóticas y resistentes para embellecer tu hogar u oficina. Calidad garantizada y envíos a todo el país.</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="categorias" id="categorias">
+        <div class="section-title">
+            <h2>Nuestras Categorías</h2>
+            <p>Explora nuestra amplia variedad de cactus y suculentas para todos los gustos</p>
+        </div>
+        
+        <div class="categorias-grid" id="categoriasGrid">
+            <!-- Categorías se cargan desde data.js -->
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="productos" id="productos">
+        <div class="section-title">
+            <h2>Productos Destacados</h2>
+            <p>Selección de nuestros cactus y suculentas más populares</p>
+        </div>
+        
+        <div class="productos-grid" id="productosGrid">
+            <!-- Productos se cargan desde data.js -->
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="nosotros">
+        <div class="about-content">
+            <div class="about-img">
+                <img src="images/nosotros.jpg" alt="Vivero Mundo Cactus" id="aboutImage">
+                <div class="img-fallback" id="imgFallback">
+                    <i class="fas fa-seedling"></i>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <h2>Sobre Mundo Cactus</h2>
+                <p>Somos una empresa familiar con más de de 1 año de experiencia en el cultivo y cuidado de cactus y suculentas. Nuestra pasión por estas maravillosas plantas nos ha llevado a crear un espacio donde los amantes de la naturaleza pueden encontrar especies únicas.</p>
+                <p>Todas nuestras plantas son cultivadas con amor y cuidado, asegurando que lleguen a tus manos en perfecto estado de salud.</p>
+                
+                <div class="features" id="featuresGrid">
+                    <!-- Features se cargan desde data.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes preguntas sobre nuestros productos? ¡Estamos aquí para ayudarte!</p>
+                
+                <div class="contacto-details" id="contactoDetails">
+                    <!-- Detalles de contacto se cargan desde data.js -->
+                </div>
+            </div>
+            
+            <div class="contacto-form">
+                <h2>¿Listo para comprar?</h2>
+                <p>Agrega productos a tu carrito y envíanos tu pedido por WhatsApp</p>
+                <a href="#" class="btn btn-outline" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Mundo Cactus</h3>
+                <p>Tu tienda de confianza para cactus y suculentas. Calidad, variedad y servicio excepcional.</p>
+                <div class="social-icons" id="socialIcons">
+                    <!-- Iconos sociales se cargan desde data.js -->
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul id="footerLinks">
+                    <!-- Enlaces se cargan desde data.js -->
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Productos</h3>
+                <ul id="footerProducts">
+                    <!-- Productos del footer se cargan desde data.js -->
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul id="footerContact">
+                    <!-- Contacto del footer se cargan desde data.js -->
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p id="footerCopyright">&copy; 2024 Mundo Cactus. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CARRITO MODAL -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="closeCart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <!-- Los productos del carrito se cargan con JavaScript -->
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">C$ 0.00</span>
+            </div>
+            <button class="btn" id="checkoutBtn" style="width: 100%;">
+                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
